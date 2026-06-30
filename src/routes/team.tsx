@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageShell, PageHeader } from "@/components/page-shell";
 import { GraduationCap, User, Plane } from "lucide-react";
 import leonorPhoto from "@/assets/LeonorAbreu.jpg.asset.json";
+import martaPhoto from "@/assets/MartaXavier.jpg.asset.json";
 
 export const Route = createFileRoute("/team")({
   head: () => ({
@@ -18,7 +19,12 @@ export const Route = createFileRoute("/team")({
 type Member = { name: string; role: string; bio: string; icon?: typeof User; photo?: string };
 
 const current: Member[] = [
-  { name: "PhD Student 1", role: "PhD Student", bio: "Brief research focus — replace with bio.", icon: GraduationCap },
+  {
+    name: "Marta Xavier",
+    role: "PhD Student",
+    photo: martaPhoto.url,
+    bio: "From Lisbon, with a background in Biological and Biomedical Engineering (IST-ULisboa). Marta is a final-year PhD student working on neuroimaging and computational neuroscience, between Lisbon and Barcelona. Outside the lab, she is usually writing, playing music, or exploring something creative.",
+  },
   { name: "PhD Student 2", role: "PhD Student", bio: "Brief research focus — replace with bio.", icon: GraduationCap },
   { name: "PhD Student 3", role: "PhD Student", bio: "Brief research focus — replace with bio.", icon: GraduationCap },
   { name: "PhD Student 4", role: "PhD Student", bio: "Brief research focus — replace with bio.", icon: GraduationCap },
