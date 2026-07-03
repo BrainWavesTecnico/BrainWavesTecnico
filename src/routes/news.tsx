@@ -14,11 +14,16 @@ export const Route = createFileRoute("/news")({
   component: NewsPage,
 });
 
-type News = { date: string; tag: string; title: string; body: string };
+type News = { date: string; tag: string; title: string; body: string; url?: string };
 
 const items: News[] = [
-  { date: "Jun 2026", tag: "Conference", title: "Replace with news title", body: "Short description of the news item — attended conference, talk, paper accepted, new member, etc." },
-  { date: "May 2026", tag: "Award", title: "Replace with news title", body: "Short description of the news item." },
+  {
+    date: "December 2025",
+    tag: "Media",
+    title: "\"O mistério das ondas cerebrais\" — Mentes Brilhantes, Observador",
+    body: "Joana Cabral is featured in Observador's \"Mentes Brilhantes\" series, discussing how the brain's mysterious activity patterns are altered in neurological and psychiatric disease, and how her research aims to decode these signals.",
+    url: "https://observador.pt/programas/mentes-brilhantes/o-misterio-das-ondas-cerebrais/",
+  },
 ];
 
 function NewsPage() {
@@ -27,11 +32,8 @@ function NewsPage() {
       <PageHeader eyebrow="Updates" title="News" description="Conferences, awards, new papers and group milestones." />
       <div className="container-page py-12">
         <ol className="relative border-l border-border/60 ml-3 space-y-8">
-          {items.map((n, i) => (
-            <li key={i} className="ml-6">
-              <span className="absolute -left-2.5 h-5 w-5 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
-                <Calendar className="h-2.5 w-2.5 text-primary" />
-              </span>
+          {items.map((n, i) => {
+            const card = (
               <div className="glass-card p-5">
                 <div className="flex items-center gap-3 text-xs uppercase tracking-wider">
                   <span className="text-muted-foreground">{n.date}</span>
@@ -40,8 +42,22 @@ function NewsPage() {
                 <h3 className="mt-2 font-semibold">{n.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{n.body}</p>
               </div>
-            </li>
-          ))}
+            );
+            return (
+              <li key={i} className="ml-6">
+                <span className="absolute -left-2.5 h-5 w-5 rounded-full bg-primary/20 border-2 border-primary flex items-center justify-center">
+                  <Calendar className="h-2.5 w-2.5 text-primary" />
+                </span>
+                {n.url ? (
+                  <a href={n.url} target="_blank" rel="noopener noreferrer" className="block hover:opacity-90 transition-opacity">
+                    {card}
+                  </a>
+                ) : (
+                  card
+                )}
+              </li>
+            );
+          })}
         </ol>
       </div>
     </PageShell>
