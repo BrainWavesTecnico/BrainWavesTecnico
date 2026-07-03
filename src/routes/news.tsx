@@ -24,6 +24,13 @@ const items: News[] = [
     body: "Joana Cabral is featured in Observador's \"Mentes Brilhantes\" series, discussing how the brain's mysterious activity patterns are altered in neurological and psychiatric disease, and how her research aims to decode these signals.",
     url: "https://observador.pt/programas/mentes-brilhantes/o-misterio-das-ondas-cerebrais/",
   },
+  {
+    date: "June 2025",
+    tag: "Preprint",
+    title: "Updated preprint: \"Cognitive reserve linked to network-specific brain-ventricle coupling modes\"",
+    body: "Fulvia Francesca Campo, Elvira Brattico, Vânia Miguel, Vicente Magalhães, Salvatore Nigro, Benedetta Tafuri, Giancarlo Logroscino and Joana Cabral (with the Alzheimer's Disease Neuroimaging Initiative) have revised their bioRxiv preprint linking distinct brain-ventricle coupling modes to cognitive reserve across the Alzheimer's disease spectrum.",
+    url: "https://www.biorxiv.org/content/10.1101/2025.01.04.631289v4",
+  },
 ];
 
 function NewsPage() {
