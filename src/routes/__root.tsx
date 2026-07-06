@@ -10,6 +10,7 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
+import faviconUrl from "../assets/brainwaves-logo.png?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
 import { themeBootstrapScript } from "../lib/theme";
 
@@ -90,6 +91,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/19a206bb-76b0-47d7-ae67-a02de6eccfcc/id-preview-5966afa1--181b8e17-2079-4bd0-a325-f387bfd0062a.lovable.app-1782853540950.png" },
     ],
     links: [
+      { rel: "icon", type: "image/png", href: faviconUrl },
+      { rel: "apple-touch-icon", href: faviconUrl },
       { rel: "stylesheet", href: appCss },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "" },
