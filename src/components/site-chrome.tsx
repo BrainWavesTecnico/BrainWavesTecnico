@@ -20,7 +20,7 @@ export function SiteHeader() {
           <img src={logo} alt="BrainWaves logo" className="h-9 w-9 brain-glow transition-transform group-hover:scale-105" />
           <div className="leading-tight">
             <div className="font-display text-base font-semibold text-foreground">BrainWaves</div>
-            <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">LaSEEB · ISR-Lisboa</div>
+            <div className="text-[10px] uppercase tracking-[0.18em] text-muted-foreground">Tecnico Lisboa</div>
           </div>
         </Link>
         <div className="flex items-center gap-2">
