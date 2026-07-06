@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { PageShell } from "@/components/page-shell";
 import logo from "@/assets/brainwaves-logo.png";
 import teamPhoto from "@/assets/team-photo.jpeg";
-import { ArrowRight, Brain, Activity, Microscope } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,11 +23,7 @@ function Index() {
       <section className="relative overflow-hidden">
         <div className="container-page grid lg:grid-cols-[1.1fr_1fr] gap-12 items-center py-20 md:py-28">
           <div>
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary/40 px-3 py-1 text-xs uppercase tracking-[0.18em] text-primary">
-              <span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" />
-              LaSEEB · ISR-Lisboa · IST
-            </div>
-            <h1 className="mt-6 font-display text-5xl md:text-6xl font-semibold leading-[1.05] text-foreground">
+            <h1 className="font-display text-5xl md:text-6xl font-semibold leading-[1.05] text-foreground">
               Decoding the brain,<br />
               <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">one wave at a time.</span>
             </h1>
@@ -57,21 +53,6 @@ function Index() {
             <img src={logo} alt="BrainWaves logo" className="relative h-80 w-80 md:h-96 md:w-96 brain-glow" />
           </div>
         </div>
-      </section>
-
-      {/* Pillars */}
-      <section className="container-page py-16 grid md:grid-cols-3 gap-6">
-        {[
-          { icon: Brain, title: "Neural signal analysis", text: "EEG, fMRI and multimodal recordings to characterize brain function." },
-          { icon: Activity, title: "Computational methods", text: "Machine learning and signal processing for biomedical data." },
-          { icon: Microscope, title: "Translational impact", text: "From fundamental neuroscience to clinical applications." },
-        ].map(({ icon: Icon, title, text }) => (
-          <div key={title} className="glass-card p-6">
-            <Icon className="h-7 w-7 text-primary" />
-            <h3 className="mt-4 text-lg font-semibold">{title}</h3>
-            <p className="mt-2 text-sm text-muted-foreground">{text}</p>
-          </div>
-        ))}
       </section>
 
       {/* Team photo */}
