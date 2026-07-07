@@ -6,6 +6,7 @@ import martaPhoto from "@/assets/MartaXavier.jpg";
 import afonsoPhoto from "@/assets/AfonsoFernandes.jpeg";
 import vaniaPhoto from "@/assets/foto_ohbm.jpeg";
 import haeunPhoto from "@/assets/hauen.jpeg";
+import giuliaPhoto from "@/assets/DSC038981-scaled.jpg";
 
 export const Route = createFileRoute("/team")({
   head: () => ({
@@ -57,7 +58,12 @@ const current: Member[] = [
 ];
 
 const visiting: Member[] = [
-  { name: "Visiting PhD 1", role: "Visiting PhD Student", bio: "Home institution and project — replace.", icon: Plane },
+  {
+    name: "Giulia Pagnin",
+    role: "Visiting PhD Student",
+    photo: giuliaPhoto,
+    bio: "PhD candidate in Neuroscience at the University of Padova, with a background in Biomedical Engineering (BSc) and Bioengineering for Neuroscience (MSc). Her research focuses on dynamic functional connectivity and brain state analysis using computational neuroimaging approaches to investigate alterations in large-scale brain networks in neurodegenerative disorders. Outside research, she enjoys listening to music, surfing and spending time with her cat.",
+  },
   { name: "Visiting PhD 2", role: "Visiting PhD Student", bio: "Home institution and project — replace.", icon: Plane },
 ];
 
