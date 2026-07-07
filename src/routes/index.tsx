@@ -45,11 +45,11 @@ function Index() {
               in the LIFE Thematic Line.
             </p>
             <p className="mt-4 max-w-xl text-base text-muted-foreground">
-              BrainWaves research group investigates brain dynamics, focusing on emergent properties, such as collective
-              oscillations, long-range correlations, resonance and non-stationary behaviour. The group combines neuroimaging
-              analysis and signal processing with dynamical system's theory, computational modelling, and physical
-              experiments to understand the mechanisms behind the observed dynamics and their link with cognition and
-              mental health.
+              The BrainWaves research group investigates brain dynamics, with a focus on emergent properties such as
+              collective oscillations, long-range correlations, resonance, and non-stationary behaviour. We combine
+              neuroimaging analysis and signal processing with dynamical systems theory, computational modelling, and
+              physical experiments to uncover the mechanisms behind the observed dynamics and their links to cognition
+              and mental health.
             </p>
           </div>
           <div className="relative flex justify-center">
