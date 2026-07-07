@@ -27,8 +27,8 @@ export function SiteHeader() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-background/70 backdrop-blur-xl">
       <div className="container-page flex h-40 items-center justify-between gap-6">
-        <Link to="/" className="flex items-center gap-3 group">
-          <img src={logo} alt="BrainWaves logo" className="h-[5.5rem] w-[5.5rem] brain-glow transition-transform group-hover:scale-105" />
+        <Link to="/" className="flex h-full items-center gap-3 group py-3">
+          <img src={logo} alt="BrainWaves logo" className="h-full w-auto object-cover logo-blend transition-transform group-hover:scale-105" />
           <div className="leading-tight">
             <div className="font-display text-[2rem] font-semibold text-foreground">BrainWaves</div>
             <div className="text-[20px] uppercase tracking-[0.18em] text-muted-foreground">Tecnico Lisboa</div>
