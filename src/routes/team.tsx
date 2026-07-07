@@ -62,7 +62,7 @@ const phdStudents: Member[] = [
     name: "Inês Bem-Haja",
     role: "PhD Student",
     icon: GraduationCap,
-    bio: "Biomedical Engineer from Coimbra. Ines's PhD project involves finding signatures of brain health in components of fMRI signal associated with physiological noise.",
+    bio: "Inês is a PhD student in Bioengineering at IST. She previously completed her BSc and MSc in Biomedical Engineering, with a specialisation in Neuroscience, at the University of Coimbra. Her current research focuses on rethinking fMRI preprocessing to preserve cerebrospinal fluid signals and explore their role in cognitive decline. Away from the computer, she's at the beach with family, camera ready, music playing, before retreating home to her cats.",
   },
 ];
 
