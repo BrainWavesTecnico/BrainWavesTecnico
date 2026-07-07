@@ -52,7 +52,7 @@ const current: Member[] = [
     name: "Leonor Abreu",
     role: "Research Assistant",
     photo: leonorPhoto,
-    bio: "Born in Porto, Leonor has 18+ years of experience in content editing, personal and team development, social impact and investigation. She holds a Master's in Psychology from ISPA (2008) and an MSc in Psychology and Neuroscience of Mental Health from King's College London (2025), where she received the Dean's Award for Outstanding Student Performance in Neuroimaging and Mental Health. Passionate about brain connectivity, she is committed to translating insights on brain health into practical strategies for prevention, treatment and social inclusion, and to fostering communication between researchers, society and policymakers. Outside the lab, she volunteers with ENCONTRAR+SE and loves running, dancing and time with her three boys.",
+    bio: "Background in social impact and team development and training. A strong desire to understand humanity led from impact evaluation in the social economy to the Psychology and Neuroscience of Mental Health MSc (King's College London), now exploring how large-scale brain dynamics, using fMRI and dynamical systems approaches, shift across mental health, emotions and women's health. Mother of three, enjoys running and dancing.",
   },
 ];
 
