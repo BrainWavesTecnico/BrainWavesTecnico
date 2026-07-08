@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell } from "@/components/page-shell";
-import { GraduationCap, User } from "lucide-react";
+import { User } from "lucide-react";
 import leonorPhoto from "@/assets/LeonorAbreu.jpg";
 import martaPhoto from "@/assets/MartaXavier.jpg";
 import afonsoPhoto from "@/assets/AfonsoFernandes.jpeg";
@@ -9,6 +9,7 @@ import haeunPhoto from "@/assets/hauen.jpeg";
 import giuliaPhoto from "@/assets/DSC038981-scaled.jpg";
 import andreaPhoto from "@/assets/AndreaVeronese.jpg";
 import joanaPhoto from "@/assets/Joana2025.jpeg";
+import inesPhoto from "@/assets/InesBh.jpeg";
 
 export const Route = createFileRoute("/team")({
   head: () => ({
@@ -61,7 +62,8 @@ const phdStudents: Member[] = [
   {
     name: "Inês Bem-Haja",
     role: "PhD Student",
-    icon: GraduationCap,
+    photo: inesPhoto,
+    photoPosition: "object-top",
     bio: "Inês is a PhD student in Bioengineering at IST. She previously completed her BSc and MSc in Biomedical Engineering, with a specialisation in Neuroscience, at the University of Coimbra. Her current research focuses on rethinking fMRI preprocessing to preserve cerebrospinal fluid signals and explore their role in cognitive decline. Away from the computer, she's at the beach with family, camera ready, music playing, before retreating home to her cats.",
   },
 ];
