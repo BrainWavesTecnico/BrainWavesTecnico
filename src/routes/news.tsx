@@ -1,6 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageShell, PageHeader } from "@/components/page-shell";
 import { Calendar } from "lucide-react";
+import posterLeonor from "@/assets/PosterLeonor.jpeg";
+import posterOhbm from "@/assets/PosterOHBM.jpeg";
 
 export const Route = createFileRoute("/news")({
   head: () => ({
@@ -14,7 +16,7 @@ export const Route = createFileRoute("/news")({
   component: NewsPage,
 });
 
-type News = { date: string; tag: string; title: string; body: string; url?: string };
+type News = { date: string; tag: string; title: string; body: string; url?: string; images?: string[] };
 
 const items: News[] = [
   {
@@ -22,6 +24,7 @@ const items: News[] = [
     tag: "Conference",
     title: "OHBM Annual Meeting — Bordeaux, France",
     body: "Joana, Haeun, Giulia and Leonor attended the Annual Meeting of the Organization for Human Brain Mapping (OHBM) in Bordeaux, France.",
+    images: [posterLeonor, posterOhbm],
   },
   {
     date: "June 2026",
@@ -72,6 +75,13 @@ function NewsPage() {
                 </div>
                 <h3 className="mt-2 font-semibold">{n.title}</h3>
                 <p className="mt-2 text-sm text-muted-foreground">{n.body}</p>
+                {n.images && (
+                  <div className="mt-3 flex flex-wrap gap-3">
+                    {n.images.map((src, j) => (
+                      <img key={j} src={src} alt={`${n.title} photo ${j + 1}`} className="h-32 w-auto rounded-lg object-cover" />
+                    ))}
+                  </div>
+                )}
               </div>
             );
             return (
