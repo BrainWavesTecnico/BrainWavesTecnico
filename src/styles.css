@@ -130,6 +130,12 @@
 }
 
 @utility logo-blend {
-  mask-image: radial-gradient(circle, black 62%, transparent 78%);
-  -webkit-mask-image: radial-gradient(circle, black 62%, transparent 78%);
+  mask-image:
+    linear-gradient(to right, transparent, black 10%, black 90%, transparent),
+    linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  mask-composite: intersect;
+  -webkit-mask-image:
+    linear-gradient(to right, transparent, black 10%, black 90%, transparent),
+    linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-composite: source-over, source-in;
 }
