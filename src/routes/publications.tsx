@@ -654,7 +654,7 @@ function PublicationsPage() {
       <PageHeader eyebrow="Research output" title="Publications" description="Selected peer-reviewed publications. Click any entry to open the paper." />
       <div className="container-page py-12 space-y-12">
         <a
-          href="https://scholar.google.es/citations?hl=en&user=v3ZEOeMAAAAJ&view_op=list_works&sortby=pubdate"
+          href="https://scholar.google.es/citations?hl=en&user=v3ZEOeMAAAAJ&view_op=list_works"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
