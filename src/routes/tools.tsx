@@ -18,6 +18,7 @@ const tools = [
   { name: "LEiDA Python", desc: "Leading Eigenvector Dynamics Analysis (LEiDA) toolbox for analyzing brain dynamics data, implemented in Python.", lang: "Python", url: "https://zenodo.org/records/14762794" },
   { name: "LEiDA MATLAB", desc: "Leading Eigenvector Dynamics Analysis (LEiDA) toolbox for analyzing brain dynamics data, implemented in MATLAB.", lang: "MATLAB", url: "https://zenodo.org/records/14762824" },
   { name: "LEiDA Voxel", desc: "Leading Eigenvector Dynamics Analysis (LEiDA) applied directly in voxel space rather than predefined parcellations, clustering recurrent patterns of phase coherence in fMRI signals.", lang: "MATLAB", url: "https://github.com/BrainWavesTecnico/LEiDA_Voxel" },
+  { name: "Video fMRI 3D or 2D", desc: "Scripts to generate videos of the temporal evolution of fMRI signals (NIFTI files), including the option to bandpass filter the signals in a band of interest.", lang: "MATLAB", url: "https://github.com/BrainWavesTecnico/Video_fMRI_3D_or_2D" },
 ];
 
 function ToolsPage() {
